@@ -20,18 +20,20 @@
 <table>
   <tr>
     <th>id</th>
-    <th>name</th>
-    <th>age</th>
-    <th>nationality</th>
+    <th>target_weight</th>
+    <th>weight</th>
+    <th>date</th>
+    <th>calories</th>
+    <th>exircise_time</th>
   </tr>
   @foreach ($weight_logs as $weight_log)
   <tr>
-    <td>{{$Weightlogs->id}}</td>
-    <td>{{$Weightlogs->target_weight}}</td>
-    <td>{{$Weightlogs->weight}}</td>
-    <td>{{$Weightlogs->date}}</td>
-    <td>{{$Weightlogs->calories}}</td>
-    <td>{{$Weightlogs->exircise_time}}</td>
+    <td>{{$Weight_logs->id}}</td>
+    <td>{{$Weight_log->target_weight}}</td>
+    <td>{{$Weight_log->weight}}</td>
+    <td>{{$Weight_log->date}}</td>
+    <td>{{$Weight_logs->calories}}</td>
+    <td>{{$Weight_logs->exircise_time}}</td>
   </tr>
   @endforeach
 </table>
