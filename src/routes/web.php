@@ -14,4 +14,4 @@ use App\Http\Controllers\WeightlogsController;
 |
 */
 
-Route::get('/', [WeightlogsController::class, 'weight_log']);
+Route::get('/', [WeightlogsController::class, 'weight_logs']);

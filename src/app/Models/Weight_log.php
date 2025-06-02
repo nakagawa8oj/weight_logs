@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Weight_log extends Model
 {
     use HasFactory;
+    protected $table = 'weightlogs';
+
 }

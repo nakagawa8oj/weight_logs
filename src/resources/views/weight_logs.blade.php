@@ -14,27 +14,42 @@
     text-align: center;
   }
 </style>
-@section('title', 'weight_logs.blade.php')
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACHTECH</title>
+</head>
+
+<body>
+  <h1>{{$content ?? ''}}</h1>
+  @section('title', 'PiGly')
 
 @section('content')
 <table>
   <tr>
     <th>id</th>
-    <th>target_weight</th>
-    <th>weight</th>
-    <th>date</th>
-    <th>calories</th>
-    <th>exircise_time</th>
+    <th>目標体重</th>
+    <th>最新体重</th>
+    <th>日付</th>
+    <th>食事摂取カロリー</th>
+    <th>運動時間</th>
   </tr>
   @foreach ($weight_logs as $weight_log)
   <tr>
-    <td>{{$Weight_logs->id}}</td>
-    <td>{{$Weight_log->target_weight}}</td>
-    <td>{{$Weight_log->weight}}</td>
-    <td>{{$Weight_log->date}}</td>
-    <td>{{$Weight_logs->calories}}</td>
-    <td>{{$Weight_logs->exircise_time}}</td>
+    <td>{{$weight_log->id}}</td>
+    <td>{{$weight_log->target_weight}}</td>
+    <td>{{$weight_log->weight}}</td>
+    <td>{{$weight_log->date}}</td>
+    <td>{{$weight_log->calories}}</td>
+    <td>{{$weight_log->exircise_time}}</td>
   </tr>
   @endforeach
 </table>
 @endsection
+
+</body>
+
+</html>
