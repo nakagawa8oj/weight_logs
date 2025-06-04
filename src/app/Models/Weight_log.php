@@ -9,5 +9,6 @@ class Weight_log extends Model
 {
     use HasFactory;
     protected $table = 'weightlogs';
+    protected $fillable = ['date', 'weight', 'target_weight','calories','exircise_time'];
 
 }

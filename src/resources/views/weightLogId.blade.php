@@ -23,12 +23,12 @@
 @section('title', 'Weight Log')
 
 @section('content')
-<form action="" method="post">
+<form action="weightLogId" method="POST">
   <table>
   @csrf
     <tr>
       <th>日付</th>
-      <td><input type="text" name="date"></td>
+      <td><input type="text" name="date" ></td>
     </tr>
     <tr>
       <th>体重</th>
