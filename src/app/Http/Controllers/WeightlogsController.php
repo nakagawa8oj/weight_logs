@@ -12,5 +12,9 @@ $weightlogs=Weight_log::all();
 
 return view('weight_logs',['weight_logs'=>$weightlogs]);
 } 
-    //
+
+public function weightLogId(){
+    return view('weightLogId');
+}
+
 }
