@@ -24,8 +24,17 @@ public function update(Request $request){
 }
 
 public function create(Request $request){
-    $author = Author::find($request->id);
+    $weight_log = Weight_log::find($request->id);
     return view('create', ['form' => $weight_log]);
 
 }
+
+public function renewal(Request $request)
+{
+    $form = $request->all();
+    unset($form['_token']);
+    Author::find($request->id)->renewal($form);
+    return redirect('/');
+}
+
 }

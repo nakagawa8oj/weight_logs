@@ -20,10 +20,10 @@
       color: white;
     }
 </style>
-@section('title', 'edit.blade.php')
+@section('title', 'create.blade.php')
 
 @section('content')
-<form action="/create" method="POST">
+<form action="create" method="POST">
 <table>
   @csrf
     <tr>
